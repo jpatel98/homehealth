@@ -6,9 +6,11 @@ import MainPage from './Pages/MainPage/MainPage'
 
 class App extends Component{
 	state = {
-		isLoggedIn: false,
-		name: 'Hyunah',
-		zip: null
+		userSelect: {
+			service: "",
+			urgency: "",
+			gender: ""
+		},
 	}
 	render(){
 	    return (

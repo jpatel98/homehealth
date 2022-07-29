@@ -16,8 +16,10 @@ const ProviderList = ({ handleProviderSelect, history }) => {
 				return(
 					<div key={uuid()} className="providers__container"
 						onClick={(e) => {
-							handleProviderSelect(e);
-							//history.push(`/details/${provider.name}`);
+							e.preventDefault();
+							handleProviderSelect(provider.name);
+							console.log(provider.name);
+							history.push(`/details/${provider.name}`);
 						}}
 					>
 						{(provider.name === "Elena Horowitz")?<img className="providers__avatar" src={elena} alt="user avatar"/>:<img className="providers__avatar" src={avatar} alt="user avatar"/>}

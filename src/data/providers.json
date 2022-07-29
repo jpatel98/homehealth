@@ -4,10 +4,52 @@
 		"type": "Certified Nurse Practicioner",
 		"rating": 47, 
 		"distance": 0.5,
-		"driveTime": 20,
+		"driveTime": 10,
 		"nextAvailable": "Jul 29, 1PM-6PM",
 		"image": "elena.png",
 		"times": [{ "date": "July 29, Fri",
+					"time": "1:00PM"
+				  },
+				  { "date": "July 29, Fri",
+					"time": "3:00PM"
+				  },
+				  { "date": "July 30, Sat",
+					"time": "9:00AM"
+				  },
+				  { "date": "July 30, Sat",
+					"time": "10:00AM"
+				  }]
+	},
+	{
+		"name": "Raj Bahl",
+		"type": "Certified Nurse Practicioner",
+		"rating": 42, 
+		"distance": 0.9,
+		"driveTime": 14,
+		"nextAvailable": "Aug 13, 5PM-6PM",
+		"image": "raj.png",
+		"times": [{ "date": "Aug 13, Fri",
+					"time": "5:00PM"
+				  },
+				  { "date": "Aug 20, Wed",
+					"time": "2:00PM"
+				  },
+				  { "date": "Aug 15, Mon",
+					"time": "4:00PM"
+				  },
+				  { "date": "Aug 19, Fri",
+					"time": "1:00PM"
+				  }]
+	},
+	{
+		"name": "Fritz Huber",
+		"type": "Certified Nurse Practicioner",
+		"rating": 47, 
+		"distance": 1.2,
+		"driveTime": 25,
+		"nextAvailable": "Jul 12, 1PM-6PM",
+		"image": "fritz.png",
+		"times": [{ "date": "July 12, Fri",
 					"time": "1:00PM"
 				  },
 				  { "date": "July 29, Fri",
@@ -21,31 +63,25 @@
 				  }]
 	},
 	{
-		"name": "Raj Bahl",
-		"type": "Certified Nurse Practicioner",
-		"rating": 47, 
-		"distance": 0.5,
-		"driveTime": 20,
-		"nextAvailable": "Jul 29, 1PM-6PM",
-		"image": "avatar.png"
-	},
-	{
-		"name": "Fritz Huber",
-		"type": "Certified Nurse Practicioner",
-		"rating": 47, 
-		"distance": 0.5,
-		"driveTime": 20,
-		"nextAvailable": "Jul 29, 1PM-6PM",
-		"image": "avatar.png"
-	},
-	{
 		"name": "Bruce Nunn",
 		"type": "Certified Nurse Practicioner",
 		"rating": 47, 
-		"distance": 0.5,
-		"driveTime": 20,
+		"distance": 1.4,
+		"driveTime": 30,
 		"nextAvailable": "Jul 29, 1PM-6PM",
-		"image": "avatar.png"
+		"image": "bruce.png",
+		"times": [{ "date": "July 29, Fri",
+					"time": "1:00PM"
+				  },
+				  { "date": "July 29, Fri",
+					"time": "3:00PM"
+				  },
+				  { "date": "July 29, Fri",
+					"time": "3:00PM"
+				  },
+				  { "date": "July 29, Fri",
+					"time": "3:00PM"
+				  }]
 	}
 ]
 

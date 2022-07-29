@@ -5,7 +5,7 @@
 		"rating": 47, 
 		"distance": 5,
 		"driveTime": 20,
-		"nextAvailable": "Jul 29, 1PM-6PM"
+		"nextAvailable": "Jul 29, 1PM-6PM",
 	},
 	{
 		"name": "Raj Bahl",
@@ -13,7 +13,7 @@
 		"rating": 47, 
 		"distance": 5,
 		"driveTime": 20,
-		"nextAvailable": "Jul 29, 1PM-6PM"
+		"nextAvailable": "Jul 29, 1PM-6PM",
 	},
 	{
 		"name": "Fritz Huber",
@@ -21,7 +21,7 @@
 		"rating": 47, 
 		"distance": 5,
 		"driveTime": 20,
-		"nextAvailable": "Jul 29, 1PM-6PM"
+		"nextAvailable": "Jul 29, 1PM-6PM",
 	},
 	{
 		"name": "Bruce Nunn",
@@ -29,7 +29,7 @@
 		"rating": 47, 
 		"distance": 5,
 		"driveTime": 20,
-		"nextAvailable": "Jul 29, 1PM-6PM"
+		"nextAvailable": "Jul 29, 1PM-6PM",
 	}
 ]
 

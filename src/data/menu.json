@@ -1,5 +1,5 @@
 {
 	"services": ["Phyiscal Checkup", "Home Safety Check", "Fall Prevention", "Get a Vaccine", "X-Rays", "Blood Work", "EKG Heart Check", "Ultra Sound"],
-	"urgency": {"Very Urgent (< 10hrs)", "Urgent (10-24hrs)", "Not Urgent(24hrs+)"},
-	"gender": ["No Preference", "Male", "Female"],
+	"urgency": ["Very Urgent (< 10hrs)", "Urgent (10-24hrs)", "Not Urgent(24hrs+)"],
+	"gender": ["No Preference", "Male", "Female"]
 }

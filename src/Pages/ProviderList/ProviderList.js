@@ -30,10 +30,10 @@ const ProviderList = ({ handleProviderSelect, history }) => {
 						<p className="providers__type">{provider.type}</p>
 						<div className="providers__rating-container">
 							<img src={star} alt='star' />
-							<p>{`Rating: ${provider.rating/10}`}</p>
+							<p>{`Rating: ${provider.rating}`}</p>
 							
 						</div>
-						<div className="providers__distance">{`${provider.distance} mi / 20min`}</div>
+						<div className="providers__distance">{`${provider.distance} mi / ${provider.driveTime}min`}</div>
 						<div className="providers__earliest">
 							<img src={calendar} className="providers__earliest-img"/>
 							<div className='provider__earliest-text'>

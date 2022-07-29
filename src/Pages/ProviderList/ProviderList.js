@@ -10,7 +10,7 @@ const ProviderList = ({ handleProviderSelect, history }) => {
 
 	return (
 		<div className='providers'>
-			<img className="providers__back" onClick={() => {history.back();}} src={BackArrow} alt="back button" />
+			<img className="providers__back" onClick={() => {history.push('/preferences');}} src={BackArrow} alt="back button" />
 			<h1 className="providers__title">{`Available Doctors (${providers.length} results)`}</h1>
 			{providers.map(provider => {
 				return(

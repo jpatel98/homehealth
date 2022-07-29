@@ -9,7 +9,7 @@ import TopNav from './assets/icons/topBar.svg';
 import BottomNav from './assets/icons/bottomNav.svg';
 import Booking from './Pages/Booking/Booking';
 import { Component } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
 
 
 class App extends Component{
@@ -44,7 +44,9 @@ class App extends Component{
 	render(){
 	    return (
 			<Router>
-				<img className="navbar__top" src={TopNav} alt="Top Navigation Bar"></img>
+				<Link to="/">
+					<img className="navbar__top" src={TopNav} alt="Top Navigation Bar"></img>
+				</Link>
 				<Switch>
 			  		<Route path='/temphold' exact component={(routerProps) => {
 						return (

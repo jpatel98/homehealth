@@ -23,8 +23,6 @@ class App extends Component{
 	handlePreferencesSubmit = (e) => {
 		e.preventDefault();
 		const { urgency, gender } = e.target;
-		console.log("Urgency :", urgency.value);
-		console.log("Gender :", gender.value);
 		this.setState({ 
 			urgency: urgency.value,
 			gender: gender.value

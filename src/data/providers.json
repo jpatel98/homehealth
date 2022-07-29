@@ -6,6 +6,7 @@
 		"distance": 5,
 		"driveTime": 20,
 		"nextAvailable": "Jul 29, 1PM-6PM",
+		"image": "elena.png"
 	},
 	{
 		"name": "Raj Bahl",
@@ -14,6 +15,7 @@
 		"distance": 5,
 		"driveTime": 20,
 		"nextAvailable": "Jul 29, 1PM-6PM",
+		"image": "avatar.png"
 	},
 	{
 		"name": "Fritz Huber",
@@ -22,6 +24,7 @@
 		"distance": 5,
 		"driveTime": 20,
 		"nextAvailable": "Jul 29, 1PM-6PM",
+		"image": "avatar.png"
 	},
 	{
 		"name": "Bruce Nunn",
@@ -30,6 +33,7 @@
 		"distance": 5,
 		"driveTime": 20,
 		"nextAvailable": "Jul 29, 1PM-6PM",
+		"image": "avatar.png"
 	}
 ]
 

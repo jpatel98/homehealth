@@ -1,0 +1,60 @@
+
+.service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 2rem;
+    
+    &__goback{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        align-self: flex-start;
+        padding: 1rem 0;
+    }
+    &__title{
+        font-size: 2.5rem;
+        line-height: 3rem;
+        margin: 0;
+        margin-bottom: 3rem;
+    }
+    &__prompt{
+        font-size: 1.5rem;
+        line-height: 1.813rem;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        &-select{
+            height: 50px;
+            width: 100%;
+            border: 3px solid #ccc;
+            border-radius: 30px;
+            padding: 0.75rem;
+            background-color: white;
+            font-size: 1rem;
+            font-family: "Product Sans";
+            margin-bottom: 12rem;
+        }
+        &-btn{
+            height: 50px;
+            width: 100%;
+            border: 3px solid #ccc;
+            border-radius: 30px;
+            font-size: 1rem;
+            font-family: "Product Sans";
+            color: white;
+            background-color: #818181;
+            cursor: pointer;
+            letter-spacing: 1px;
+        }
+    }
+}

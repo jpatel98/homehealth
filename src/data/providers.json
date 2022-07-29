@@ -27,7 +27,19 @@
 		"distance": 0.5,
 		"driveTime": 20,
 		"nextAvailable": "Jul 29, 1PM-6PM",
-		"image": "avatar.png"
+		"image": "elena.png",
+		"times": [{ "date": "July 29, Fri",
+					"time": "1:00PM"
+				  },
+				  { "date": "July 29, Fri",
+					"time": "3:00PM"
+				  },
+				  { "date": "July 29, Fri",
+					"time": "3:00PM"
+				  },
+				  { "date": "July 29, Fri",
+					"time": "3:00PM"
+				  }]
 	},
 	{
 		"name": "Fritz Huber",
@@ -36,7 +48,19 @@
 		"distance": 0.5,
 		"driveTime": 20,
 		"nextAvailable": "Jul 29, 1PM-6PM",
-		"image": "avatar.png"
+		"image": "elena.png",
+		"times": [{ "date": "July 29, Fri",
+					"time": "1:00PM"
+				  },
+				  { "date": "July 29, Fri",
+					"time": "3:00PM"
+				  },
+				  { "date": "July 29, Fri",
+					"time": "3:00PM"
+				  },
+				  { "date": "July 29, Fri",
+					"time": "3:00PM"
+				  }]
 	},
 	{
 		"name": "Bruce Nunn",
@@ -45,7 +69,19 @@
 		"distance": 0.5,
 		"driveTime": 20,
 		"nextAvailable": "Jul 29, 1PM-6PM",
-		"image": "avatar.png"
+		"image": "elena.png",
+		"times": [{ "date": "July 29, Fri",
+					"time": "1:00PM"
+				  },
+				  { "date": "July 29, Fri",
+					"time": "3:00PM"
+				  },
+				  { "date": "July 29, Fri",
+					"time": "3:00PM"
+				  },
+				  { "date": "July 29, Fri",
+					"time": "3:00PM"
+				  }]
 	}
 ]
 

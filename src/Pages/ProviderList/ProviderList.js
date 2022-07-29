@@ -4,7 +4,10 @@ import BackArrow from '../../assets/icons/backarrow.png';
 import star from '../../assets/icons/star.png';
 import calendar from '../../assets/icons/calendar.png';
 import elena from '../../assets/images/elena.png';
-import avatar from '../../assets/images/avatar.png';
+import raj from '../../assets/images/raj.png';
+import fritz from '../../assets/images/fritz.png';
+import bruce from '../../assets/images/bruce.png';
+
 import './ProviderList.scss'
 
 const ProviderList = ({ handleProviderSelect, history }) => {
@@ -25,7 +28,11 @@ const ProviderList = ({ handleProviderSelect, history }) => {
 							history.push(`/details/${provider.name}`);
 						}}
 					>
-						{(provider.name === "Elena Horowitz")?<img className="providers__avatar" src={elena} alt="user avatar"/>:<img className="providers__avatar" src={avatar} alt="user avatar"/>}
+						{(provider.name === "Elena Horowitz") && <img className="providers__avatar" src={elena} alt={`${provider.name} avatar`}/>}
+						{(provider.name === "Raj Bahl") && <img className="providers__avatar" src={raj} alt= {`${provider.name} avatar`}/>}
+						{(provider.name === "Fritz Huber") && <img className="providers__avatar" src={fritz} alt={`${provider.name} avatar`}/>}
+						{(provider.name === "Bruce Nunn") && <img className="providers__avatar" src={bruce} alt={`${provider.name} avatar`} />}
+						
 						<h2 className="providers__name">{provider.name}</h2>
 						<p className="providers__type">{provider.type}</p>
 						<div className="providers__rating-container">

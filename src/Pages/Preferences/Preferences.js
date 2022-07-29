@@ -9,7 +9,7 @@ const Preferences = ({ handlePreferencesSubmit, history }) => {
 			<h1 className="preferences__title">Your Preferences</h1>
 			<form onSubmit={(e) => {
 				handlePreferencesSubmit(e)
-				history.push('/preferences');
+				history.push('/providers');
 			}}>
 				<label htmlFor="urgency">How urgent is this visit?
 					<select name="urgency" id="urgency" className="preferences__urgency-select">

@@ -3,6 +3,7 @@ import './partials/_global.scss';
 import MainPage from './Pages/MainPage/MainPage';
 import ServiceSelect from './Pages/ServiceSelect/ServiceSelect';
 import Preferences from './Pages/Preferences/Preferences';
+import ProviderList from './Pages/ProviderList/ProviderList';
 import { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -27,6 +28,11 @@ class App extends Component{
 			urgency: urgency.value,
 			gender: gender.value
 		});
+	}
+
+	handleProviderSelect = (e) => {
+		e.preventDefault();
+		console.log("In Provider Select");
 	}
 
 	render(){
@@ -61,6 +67,17 @@ class App extends Component{
 							/>
 						);
 					}}/>
+			  		<Route path='/providers' component={(routerProps) => {
+						return (
+							<ProviderList
+								handleProviderSelect={(e) => {
+									this.handleProviderSelect(e);
+								}}
+								{...routerProps}
+							/>
+						);
+					}}/>
+
 				</Switch>
 			</Router>
 		);

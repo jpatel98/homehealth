@@ -1,10 +1,11 @@
-import { Component } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
 import './App.scss';
+import './partials/_global.scss';
 import MainPage from './Pages/MainPage/MainPage';
 import ServiceSelect from './Pages/ServiceSelect/ServiceSelect';
 import Preferences from './Pages/Preferences/Preferences';
+import { Component } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 
 class App extends Component{
 	state = {

@@ -4,16 +4,18 @@ import MainPage from './Pages/MainPage/MainPage';
 import ServiceSelect from './Pages/ServiceSelect/ServiceSelect';
 import Preferences from './Pages/Preferences/Preferences';
 import ProviderList from './Pages/ProviderList/ProviderList';
+import Booking from './Pages/Booking/Booking';
 import { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
 class App extends Component{
 	state = {
-		name: "Hyunh",
+		name: "Presenter's Name",
 		service: "",
 		urgency: "",
-		gender: ""
+		gender: "",
+		provider: ""
 	}
 
 	handleServiceSubmit = (e) => {
@@ -30,9 +32,10 @@ class App extends Component{
 		});
 	}
 
-	handleProviderSelect = (e) => {
-		e.preventDefault();
-		console.log("In Provider Select");
+	handleProviderSelect = (name) => {
+		this.setState({
+			provider: name
+		});
 	}
 
 	render(){
@@ -73,6 +76,13 @@ class App extends Component{
 								handleProviderSelect={(e) => {
 									this.handleProviderSelect(e);
 								}}
+								{...routerProps}
+							/>
+						);
+					}}/>
+			  		<Route path='/details/:name' component={(routerProps) => {
+						return (
+							<Booking
 								{...routerProps}
 							/>
 						);

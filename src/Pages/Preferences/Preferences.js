@@ -1,6 +1,6 @@
 import { v4 as uuid } from 'uuid';
 import menu from '../../data/menu.json';
-import './Prefernces.scss';
+import './Preferences.scss';
 import BackArrow from '../../assets/icons/backarrow.png';
 
 

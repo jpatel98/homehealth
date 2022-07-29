@@ -1,3 +1,6 @@
+@use '../../partials/variables' as *;
+@use '../../partials/mixins' as *;
+
 .preferences {
     display: flex;
     flex-direction: column;
@@ -19,6 +22,7 @@
         line-height: 3rem;
         margin: 0;
         margin-bottom: 3rem;
+        color: $google-dark-blue;
     }
 
     &__form{
@@ -31,22 +35,26 @@
         &__prompt{
             font-size: 1.5rem;
             line-height: 1.813rem;
-            margin: 0;
+            margin-bottom: 0;
+            padding-bottom: 4.5rem;
             width: 100%;
             justify-content: center;
             
             &-select {
                 height: 50px;
                 width: 100%;
-                border: 3px solid #ccc;
+                border: 3px solid $google-blue;
                 border-radius: 30px;
                 padding: 0.75rem;
                 background-color: white;
                 font-size: 1rem;
                 font-family: "Product Sans";
                 margin-top: 1rem;
-                margin-bottom: 4.5rem;
                 cursor: pointer;
+
+                &:hover{
+                    border: 3px solid $google-dark-blue;
+                }
             }
         }
 
@@ -54,13 +62,19 @@
             height: 50px;
             width: 100%;
             border: 3px solid #ccc;
-            border-radius: 30px;
+            border-radius: 20px;
+            border-style: hidden;
             font-size: 1rem;
             font-family: "Product Sans";
             color: white;
-            background-color: #818181;
+            background-color: $google-blue;
             cursor: pointer;
             letter-spacing: 1px;
+
+            &:hover{
+                background-color: $google-dark-blue;
+                border: 3px solid $google-dark-blue;
+            }
         }
     }
 

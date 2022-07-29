@@ -1,3 +1,5 @@
+@use '../../partials/variables' as *;
+@use '../../partials/mixins' as *;
 
 .service{
     display: flex;
@@ -13,12 +15,14 @@
         justify-content: flex-start;
         align-self: flex-start;
         padding: 1rem 0;
+        color: $google-dark-blue;
     }
     &__title{
         font-size: 2.5rem;
         line-height: 3rem;
         margin: 0;
         margin-bottom: 3rem;
+        color: $google-dark-blue;
     }
     &__prompt{
         font-size: 1.5rem;
@@ -36,7 +40,7 @@
         &-select{
             height: 50px;
             width: 100%;
-            border: 3px solid #ccc;
+            border: 3px solid $google-blue;
             border-radius: 30px;
             padding: 0.75rem;
             background-color: white;
@@ -45,20 +49,25 @@
             margin-bottom: 12rem;
             cursor: pointer;
         } :hover{
-            border: 3px solid rgb(35, 4, 4);
+            border: 3px solid $google-dark-blue;
         }
 
         &-btn{
             height: 50px;
             width: 100%;
             border: 3px solid #ccc;
-            border-radius: 30px;
+            border-radius: 20px;
+            border-style: hidden;
             font-size: 1rem;
             font-family: "Product Sans";
             color: white;
-            background-color: #818181;
+            background-color: $google-blue;
             cursor: pointer;
             letter-spacing: 1px;
+
+            &:hover{
+                background-color: $google-dark-blue;
+            }
         }
     }
 }

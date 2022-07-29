@@ -1,3 +1,6 @@
+@use '../../partials/mixins' as *;
+@use '../../partials/variables' as *;
+
 .searchform{
     display: flex;
     flex-direction: column;

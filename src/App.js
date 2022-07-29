@@ -1,5 +1,6 @@
 import './App.scss';
-import MainPage from './Pages/MainPage/MainPage'
+import './partials/_global.scss';
+import MainPage from './Pages/MainPage/MainPage';
 
 function App() {
   return (

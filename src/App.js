@@ -4,6 +4,9 @@ import MainPage from './Pages/MainPage/MainPage';
 import ServiceSelect from './Pages/ServiceSelect/ServiceSelect';
 import Preferences from './Pages/Preferences/Preferences';
 import ProviderList from './Pages/ProviderList/ProviderList';
+// import BottomBar from './Components/BottomBar/BottomBar';
+import TopNav from './assets/icons/topBar.svg';
+import BottomNav from './assets/icons/bottomNav.svg';
 import { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -37,7 +40,8 @@ class App extends Component{
 
 	render(){
 	    return (
-	  		<Router>
+			<Router>
+				<img className="navbar__top" src={TopNav} alt="Top Navigation Bar"></img>
 				<Switch>
 			  		<Route path='/temphold' exact component={(routerProps) => {
 						return (
@@ -79,6 +83,7 @@ class App extends Component{
 					}}/>
 
 				</Switch>
+				<img className="navbar__bottom" src={BottomNav}  alt="Bottom Navigation Bar"></img>
 			</Router>
 		);
 	}

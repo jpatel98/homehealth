@@ -42,7 +42,7 @@ const ProviderList = ({ handleProviderSelect, history }) => {
 						</div>
 						<div className="providers__distance">{`${provider.distance} mi / ${provider.driveTime}min`}</div>
 						<div className="providers__earliest">
-							<img src={calendar} className="providers__earliest-img"/>
+							<img src={calendar} className="providers__earliest-img" alt=""/>
 							<div className='provider__earliest-text'>
 								<p>Earliest possible date</p>
 								<p>{provider.nextAvailable}</p>

@@ -1,15 +1,13 @@
 import { v4 as uuid } from 'uuid';
 import menu from '../../data/menu.json';
 import './Prefernces.scss';
-import BackArrow from '../../assets/icons/backarrow.png'
-import {Link } from 'react-router-dom';
+import BackArrow from '../../assets/icons/backarrow.png';
+
 
 const Preferences = ({ handlePreferencesSubmit, history }) => {
 	return (
-		<div className="preferences">
-			<Link className='service__goback'>
-				<img src={BackArrow} alt="back" />
-			</Link>
+		<div className='preferences'>
+			<img className="preferences__back" onClick={() => {history.push('/');}} src={BackArrow} alt="back button" />	
 			<h1 className="preferences__title">Your Preferences</h1>
 			<form  className="preferences__form" onSubmit={(e) => {
 				handlePreferencesSubmit(e)

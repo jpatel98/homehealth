@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "Product Sans";
+    src: url(../src/assets/fonts/ProductSansRegular.woff) format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Product Sans Bold";
+    src: url(../src/assets/fonts/ProductSansBold.woff) format('woff');
+    font-weight: 400;
+}
+
+body{
+    font-family: 'Product Sans';
+}

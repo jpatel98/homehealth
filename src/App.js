@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.scss';
 import MainPage from './Pages/MainPage/MainPage';
 import ServiceSelect from './Pages/ServiceSelect/ServiceSelect';
+import Preferences from './Pages/Preferences/Preferences';
 
 class App extends Component{
 	state = {
@@ -15,7 +16,12 @@ class App extends Component{
 
 	handleServiceSubmit = (e) => {
 		e.preventDefault();
-		console.log(e);
+		this.setState({ service: e.target.services.value });
+	}
+
+	handlePreferencesSubmit = (e) => {
+		e.preventDefault();
+		console.log(e.target);
 	}
 
 	render(){
@@ -36,8 +42,19 @@ class App extends Component{
 								handleServiceSubmit={(e) => {
 									this.handleServiceSubmit(e);
 								}}
+								{...routerProps}
 							/>
 						)
+					}}/>
+			  		<Route path='/preferences' component={(routerProps) => {
+						return (
+							<Preferences
+								handlePreferencesSubmit={(e) => {
+									this.handleServiceSubmit(e);
+								}}
+								{...routerProps}
+							/>
+						);
 					}}/>
 				</Switch>
 			</Router>

@@ -22,7 +22,11 @@ class App extends Component{
 
 	handlePreferencesSubmit = (e) => {
 		e.preventDefault();
-		console.log(e.target);
+		const { urgency, gender } = e.target;
+		this.setState({ 
+			urgency: urgency.value,
+			gender: gender.value
+		});
 	}
 
 	render(){
@@ -51,7 +55,7 @@ class App extends Component{
 						return (
 							<Preferences
 								handlePreferencesSubmit={(e) => {
-									this.handleServiceSubmit(e);
+									this.handlePreferencesSubmit(e);
 								}}
 								{...routerProps}
 							/>
